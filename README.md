@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/5e2fbeb1-6ec1-4a93-a31c-f66f0deaa49f)
-
 # SwiftLPG 🚀
 
   
@@ -344,13 +342,13 @@ bun run dev
 
 ### 1. Admin Dashboard
 
-![Admin Dashboard](https://via.placeholder.com/800x400?text=Admin+Dashboard)
+![Admin Dashboard](https://photos.app.goo.gl/Hi4HD7PFm74bArE59)
 
   
 
 ### 2. Customer Panel
 
-![Customer Panel](https://via.placeholder.com/800x400?text=Customer+Panel)
+![Customer Dashboard](https://photos.app.goo.gl/G4ZHHFiB8mDKT1fu7)
 
   
 
