@@ -328,7 +328,7 @@ bun run dev
 
   
 
-👉 **[View Live Demo Here](https://your-live-demo-link.com)**
+👉 **[View Live Demo Here](https://swiftlpg.onrender.com)**
 
   
 
@@ -349,7 +349,7 @@ bun run dev
 
 ### 2. Customer Panel
 
-![Customer Dashboard](https://github.com/user-attachments/assets/7c7ded09-6f65-49f5-a3a7-e98194961453)
+![Customer Dashboard](https://github.com/user-attachments/assets/becbab94-0987-439b-ac93-6eaa5a01e132)
 
 
   
