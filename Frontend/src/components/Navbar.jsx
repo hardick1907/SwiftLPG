@@ -23,7 +23,11 @@ export default function Navbar() {
   };
 
   const toggleMenu = () => {
-    setIsMenuOpen(prev => !prev);
+    setIsMenuOpen((prev) => !prev);
+  };
+  
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -123,18 +127,13 @@ export default function Navbar() {
           <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden" } absolute top-16 left-0 w-full bg-base-100
             shadow-lg`}>
             <div className="flex flex-col items-center">
-              <Link to="/" className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
+              <Link to="/" onClick={closeMenu} className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
               <House className="w-4 h-4" />
               <span>Home</span>
               </Link>
 
-              <Link to="/about" className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
-              <ScrollText className="w-4 h-4" />
-              <span>About Us</span>
-              </Link>
-
               {!user && !admin && (
-              <Link to="/signin" className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
+              <Link to="/signin" onClick={closeMenu} className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
               <SquarePlus className="w-4 h-4" />
               <span>Sign In</span>
               </Link>
@@ -142,22 +141,22 @@ export default function Navbar() {
 
               {user && (
               <>
-                <Link to="/dashboard" className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
+                <Link to="/dashboard" onClick={closeMenu} className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
                 <LayoutDashboard className="size-5" />
                 <span>Dashboard</span>
                 </Link>
 
-                <Link to="/customerinbox" className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
+                <Link to="/customerinbox" onClick={closeMenu} className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
                 <Mail className="size-5" />
                 <span>Inbox</span>
                 </Link>
 
-                <Link to="/booknow" className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
+                <Link to="/booknow" onClick={closeMenu} className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
                 <LayoutDashboard className="size-5" />
                 <span>Book Now</span>
                 </Link>
 
-                <button className="flex gap-2 items-center py-2" onClick={handleLogout}>
+                <button className="flex gap-2 items-center py-2" onClick={(e) => { handleLogout(e); closeMenu(); }} >
                   <LogOut className="size-5" />
                   <span>Logout</span>
                 </button>
@@ -166,27 +165,27 @@ export default function Navbar() {
 
               {admin && (
               <>
-                <Link to="/admindashboard" className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
+                <Link to="/admindashboard" onClick={closeMenu} className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
                 <LayoutDashboard className="size-5" />
                 <span>Dashboard</span>
                 </Link>
 
-                <Link to="/manageusers" className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
+                <Link to="/manageusers" onClick={closeMenu} className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
                 <Users className="size-5" />
                 <span>Customers</span>
                 </Link>
 
-                <Link to="/bookingsrequest" className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
+                <Link to="/bookingsrequest" onClick={closeMenu} className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
                 <Bell className="size-5" />
                 <span>Request</span>
                 </Link>
 
-                <Link to="/notices" className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
+                <Link to="/notices" onClick={closeMenu} className="btn btn-sm bg-transparent border-none hover:bg-primary py-2">
                 <ClipboardList className="size-5" />
                 <span>Notices</span>
                 </Link>
 
-                <button className="flex gap-2 items-center py-2" onClick={handleAdminLogout}>
+                <button className="flex gap-2 items-center py-2"onClick={(e) => { handleAdminLogout(e); closeMenu(); }}>
                   <LogOut className="size-5" />
                   <span>Logout</span>
                 </button>
