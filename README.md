@@ -1,5 +1,3 @@
-
-
 # SwiftLPG 🚀
 
   
@@ -308,7 +306,7 @@ bun run dev
 
 -  **Email**: `admin1@gmail.com`
 
--  **Admin ID**: `EMPM7KE3C`
+-  **Admin ID**: `EMPBE029E`
 
 -  **Password**: `1234567`
 
@@ -330,7 +328,7 @@ bun run dev
 
   
 
-👉 **[View Live Demo Here](https://your-live-demo-link.com)**
+👉 **[View Live Demo Here](https://swiftlpg.onrender.com)**
 
   
 
@@ -344,13 +342,15 @@ bun run dev
 
 ### 1. Admin Dashboard
 
-![Admin Dashboard](https://via.placeholder.com/800x400?text=Admin+Dashboard)
+![Admin Dashboard](https://github.com/user-attachments/assets/137f2e9c-2d8c-4671-9620-6af1b33c4f74)
+
 
   
 
 ### 2. Customer Panel
 
-![Customer Panel](https://via.placeholder.com/800x400?text=Customer+Panel)
+![Customer Dashboard](https://github.com/user-attachments/assets/becbab94-0987-439b-ac93-6eaa5a01e132)
+
 
   
 
