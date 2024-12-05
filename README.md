@@ -342,13 +342,15 @@ bun run dev
 
 ### 1. Admin Dashboard
 
-![Admin Dashboard](https://photos.app.goo.gl/Hi4HD7PFm74bArE59)
+![Admin Dashboard](https://github.com/user-attachments/assets/137f2e9c-2d8c-4671-9620-6af1b33c4f74)
+
 
   
 
 ### 2. Customer Panel
 
-![Customer Dashboard](https://photos.app.goo.gl/G4ZHHFiB8mDKT1fu7)
+![Customer Dashboard](https://github.com/user-attachments/assets/7c7ded09-6f65-49f5-a3a7-e98194961453)
+
 
   
 
